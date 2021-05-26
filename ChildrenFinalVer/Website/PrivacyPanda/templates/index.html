@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+	
+		<body>
+
+			<link rel="stylesheet" type="text/css" href="{% static 'css/stylesheet.css' %}"/>
+
+			
+			<img src="{% static 'images/logo.png' %}" class="logo">
+			
+		
+			<!-- Create Buttons for Tabs -->
+			<div class="tab">
+				<button class="tablinks" onclick="openTab(event, 'Home')" id="defaultOpen">Home</button>
+				<button class="tablinks" onclick="openTab(event, 'About Us')">About Us</button>
+				<button class="tablinks" onclick="openTab(event, 'Privacy Policy')">Privacy Policy</button>	
+				<button class="tablinks" onclick="openTab(event, 'Education')">Education</button>
+				<button class="tablinks" onclick="openTab(event, 'Download & Use')">Download & Use</button>
+			</div>
+
+
+			<!-- Create Tab Content -->
+			<div id="Home" class="tabcontent">
+				<h1 class="greeting"> Welcome to Privacy Panda! </h1>
+				<img src="https://media.giphy.com/media/5V1L0syc7hKdW/giphy.gif" class="panda_gif">
+			</div>
+			<div id="About Us" class="tabcontent">
+				<p>PrivacyPanda was formed in an attempt to create a software for busy parents to have more control over their childrens’ privacy online. At the same time, we place a priority on giving children some control over their data and privacy online.</p>
+				<p>We strive to serve busy parents and guardians that might struggle with technology but want their tech-savvy children to remain safe online. Additionally, we want to ensure that parents are aware of what data is being collected on their children and have control over that.</p>
+				<p>Our product is a dashboard, which will allow parents to track their kids internet usage and the privacy policies of the many sites that children use daily. We place an emphasis on COPPA compliance to ensure that these sites are complying with regulations.</p>
+				<p>Using the Privacy Panda extension, browsing data is stored locally on your computer. This means that it is only accessible from
+					your browser. IP Addresses and some user device information is automatically stored by the web server we use to host our website,
+					but this information is only accessible to the hosting server administrators.</p>
+				
+				<!--Team Introductions with JPG images-->
+				<h3 style="text-decoration: underline">Our Team:</h3>
+				
+				<h4 style="text-decoration: underline">Ernest Afflu</h4>
+				<img src="{% static 'images/ernest.jpg' %}" class="headshots">
+				<p>Ernest is an advocate of both privacy and pandas, so he was a natural addition to our team.</p>
+				
+				<h4 style="text-decoration: underline">Jordan Christian</h4>
+				<img src="{% static 'images/jordan.jpg' %}" class="headshots">
+				<p>Jordan is a first year student in security. In his free time he loves to travel and play sports! </p>
+				
+				<h4 style="text-decoration: underline">Anna Collins</h4>
+				<img src="{% static 'images/anna.jpg' %}" class="headshots">
+				<p>Anna is an Information Security, Policy, and Management Master's student at CMU. She is a privacy advocate and worries about the impact of today's social media landscape on children.  </p>
+				
+				<h4 style="text-decoration: underline">Shoukang Mao</h4>
+				<img src="{% static 'images/shoukang.JPG' %}" class="headshots">
+				<p>Shoukang is also an Information Security and Policy Management Master's student at CMU. He is concerned about the privacy safety of children and he is a panda fanatic (maybe it’s because pandas are China’s national treasure animal)</p>
+				
+				<h4 style="text-decoration: underline">Annette Stawsky</h4>
+				<img src="{% static 'images/annette.jpg' %}" class="headshots">
+				<p>Annette is a Master's student studying Privacy Engineering at CMU. She got her Bachelor's from Cornell in math and computer science. She loves stuffed pandas, real pandas, red pandas, and most importantly, PrivacyPanda.</p>
+			</div>
+			
+			<div id="Privacy Policy" class="tabcontent">
+				<p>Privacy Panda is committed to your privacy. We do not store any data on users of our extension package, and as such, there is no data for us to process or store. If our data handling practices change,  all users are to be notified through updates to the extension software as well as notices here on our splash page. </p>
+			</div>
+
+			<div id="Education" class="tabcontent">
+				<p>Privacy Panda employs privacy experts, early childhood educators and psychologists to write articles on different topics that might be helpful in your mission to protect your child's privacy online. See below for some of our highlights and most recent blog posts. Also, we have other links for useful resources regarding privacy.</p>
+				
+				<h3 style="text-decoration: underline">Blog</h3>
+				<p><a href="https://www.google.com">Expert Blog</a></p>		<!---Fake Link, directs to Google as a place holder-->	
+				
+				<h3 style="text-decoration: underline">How to Talk to Your Children about Privacy</h3>
+				<p><a href="https://staysafeonline.org/stay-safe-online/managing-your-privacy/tips-parents-raising-privacy-savvy-kids/">Tips For Parents on Raising Privacy-Savvy Kids</a></p> 
+				<p><a href="https://www.consumer.ftc.gov/articles/0006-talk-your-kids">Talk to Your Kids</a></p> 
+				
+				<h3 style="text-decoration: underline">Giving up the Reigns: At what age should you give some control back to your child?</h3> 
+				<p><a href="https://www.forbes.com/sites/jessicabaron/2018/12/16/parents-who-post-about-their-kids-online-could-be-damaging-their-futures/?sh=2e2b998327b7">Posting About Your Kids Online Could Damage Their Futures</a></p>
+				<p><a href="https://www.verywellfamily.com/why-does-my-teen-need-privacy-2609615">Why Teens Need Privacy From Their Parents</a></p>
+				
+				<h3 style="text-decoration: underline">What is COPPA?</h3>
+				<p><a href="https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule"> COPPA</a></p>
+				<p><a href="https://en.wikipedia.org/wiki/Children%27s_Online_Privacy_Protection_Act"> Children's Online Privacy Protection Act</a></p>
+			</div>
+
+			<div id="Download & Use" class="tabcontent">
+				<h3 style="text-decoration: underline">Download</h3>
+				<button type="button" class="download_button">Download Privacy Panda</button>
+				<h3 style="text-decoration: underline">Set Up Instructions</h3>
+				<p>1. Download the Privacy Panda Extension by clicking the link above</p>
+				<p>2. Set up People in Chrome for each of your children</p>
+				<p>3. Be sure to explain to your children the importance of privacy on the internet and what this program is for. If you need help talking to children of different ages about privacy, see our blog.</p>
+			</div>
+			
+		
+			<script src="{% static 'js/main.js' %}"></script>
+			<script>document.getElementById("defaultOpen").click();</script> <!---This line automatically opens "Home" tab upon entry to page, tried to use in main.js instead but no luck-->
+		
+
+		</body>
+
+	</html>

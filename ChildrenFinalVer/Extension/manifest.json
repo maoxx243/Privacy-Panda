@@ -1,0 +1,33 @@
+{
+  "name": "Privacy Panda",
+  "description": "Monitoring Consent on Children's Sites",
+  "version": "0.1.0",
+  "manifest_version": 2,
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAx7lvEH72JB5VB23I2R+U2x6rA5p6LRw2tfyMuMPQ+5Tmk3UAXfQn9STsJ2JpDIpjG/08ekIBXGsaQe2d5012FSii2pJcK5X+2u/NxRfutckvy7R3sJl6jAhX9fczZWcmHvKaZpJEt6rn4uMXWy30sRZbgzy5uj5g1vH/3xL+tftmvqHu+dvwJUnX/QqdxOkcJo635sZd5BA+lPz3iCVk0ObNyjasxbCb9VWZg3JFUsiuXEcCumrxN/yFgv3TXEZSofFKcJROPI4oHAzbHaWiq+mooZ9/zFk054f3s/CP5biBm0HsqSnOkvWUvIvVIqpVKzM4rJNYtLx4/b3BOE+q/QIDAQAB",
+  "icons": {
+    "128": "./icon.png",
+    "64": "./full_icon.png"
+  },
+  "incognito": "split",
+  "background": {
+    "_comment1": "these are the scripts to run",
+    "scripts": [
+      "./background.js",
+      "./jsrsasign-all-min.js"
+    ]
+  },
+  "options_page": "./options.html",
+  "browser_action": {
+    "default_icon": "./icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Privacy Panda"
+  },
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "https://www.google.com/*",
+    "identity",
+    "identity.email"
+  ]
+}

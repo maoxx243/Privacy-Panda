@@ -1,0 +1,32 @@
+{
+	"www.google.com": 
+	{
+		"start_url": "Privacy Policy Link",
+		"final_url": "Privacy Policy Link",
+		"clauses": "This is Google's Privacy Policy"
+	},
+	"www.reddit.com": 
+	{
+		"start_url": "Privacy Policy Link",
+		"final_url": "Privacy Policy Link",
+		"clauses": "This is Reddit's Privacy Policy"
+	},
+	"www.youtube.com": 
+	{
+		"start_url": "Privacy Policy Link",
+		"final_url": "Privacy Policy Link",
+		"clauses": "This is YouTube's Privacy Policy"
+	},
+	"www.facebook.com": 
+	{
+		"start_url": "Privacy Policy Link",
+		"final_url": "Privacy Policy Link",
+		"clauses": "This is Facebook's Privacy Policy"
+	},
+	"www.tumblr.com": 
+	{
+		"start_url": "Privacy Policy Link",
+		"final_url": "Privacy Policy Link",
+		"clauses": "This is Tumblr's Privacy Policy"
+	}
+}

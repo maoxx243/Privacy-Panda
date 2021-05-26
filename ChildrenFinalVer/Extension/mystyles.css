@@ -1,0 +1,7 @@
+/* just for testing for injecting css into foreground. not used in extension */
+#first{
+  position:absolute;
+  top:20%;
+  left:20%;
+
+}

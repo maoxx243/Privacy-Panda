@@ -1,0 +1,72 @@
+<!-- =================================
+This html displays the information collected on each page, organized into a table
+================================= //-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>PPanda - Information Collected</title>
+  <!-- <link rel="stylesheet" href="mystyle.css"> -->
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <!-- Source from W3School -->
+  <style>
+    body {
+      background-color: whitesmoke;
+      opacity: 0.7;
+    }
+
+    h1 {
+      background-color: black;
+      font-family: "Lucida Console", "Courier New", monospace;
+      color: whitesmoke;
+    }
+  </style>
+</head>
+
+<body>
+  <h1 style="text-align: center">What Information is Being Collected About Your Child?</h1>
+  <img src="full_icon.png" alt="logo" class="center" width="100" height="80">
+  <a href="/index.html" class="center"> Back to browsing history</a>
+  <a href="/logout.html" class="center"> Logout</a>
+  <div style="height:200px; margin:100px;">
+    <h1>Website Specific</h1>
+    <!-- below is the table using images to display whether the information 
+    is collected from the website -->
+    <table style="width:100%">
+      <tr>
+        <th>Website</th>
+        <th>Full Name</th>
+        <th>Physical Address</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+        <th>Behavior</th>
+      </tr>
+      <tr>
+        <td>ex_youtube.com</td>
+        <td><img src="yes.png" alt="yes" width="25" height="25"></td>
+        <td><img src="no.png" alt="no" width="25" height="25"></td>
+        <td><img src="yes.png" alt="yes" width="25" height="25"></td>
+        <td><img src="no.png" alt="no" width="25" height="25"></td>
+        <td><img src="yes.png" alt="yes" width="25" height="25"></td>
+      </tr>
+    </table>
+    <div class="spacer"></div>
+    <img src="no.png" alt="no" width="25" height="25"> means that the website DOES NOT collect this information
+    <img src="yes.png" alt="yes" width="25" height="25"> means that the website DOES collect this information
+  </div>
+
+  <div style="height:100px; margin:100px;">
+    <h1>What is Behavior Information</h1>
+    <p>
+      your actions blah blah used to advertise blah blah
+    </p>
+  </div>
+  <div style="height:200px; margin:100px;">
+    <h1>What is this Information Used For</h1>
+    <p>
+      Explain advertising and why it sucks
+    </p>
+  </div>
+</body>
